@@ -1,4 +1,4 @@
-header {
+ /* header {
     background-color: turquoise;
     display: flex;
     color: whitesmoke;
@@ -7,7 +7,7 @@ header {
 
 header > * {
     height: auto;
-}
+} */
 
 nav ul {
     list-style: none;
@@ -26,10 +26,10 @@ nav ul li {
  
 }
 
-nav ul li a {
+/* nav ul li a {
    
     text-decoration: none;
-}
+} */
 
 nav ul li a:hover {
     color: black;
@@ -38,4 +38,8 @@ nav ul li a:hover {
 nav img{
     height: 50px;
     width: 50px;
+}
+
+nav{
+    background-color: turquoise;
 }

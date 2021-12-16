@@ -8,31 +8,37 @@ class Movies extends Component{
     constructor(){
         super()
         this.state={
-            search :[]
+            search :[],
+            film: null,
         }
     }
-    getMovieResult=(e)=>{
-        e.preventDefault();
-        fetch('https://ghibliapi.herokuapp.com/films')
-        .then((res)=>{
-            return res.json()
-        }).then((data)=>{
-            this.setState({
-                search:data
+    
+
+    fetchMovies =()=>{
+        fetch("https://ghibliapi.herokuapp.com/films")
+            .then(res=>res.json())
+            .then((data)=>{
+                this.setState({
+                   film: data
+                })
             })
-            console.log(data)
-        })
     }
+
+    componentDidMount =()=>{
+        this.fetchMovies();
+    }
+    
+  
+    
     render(){
         
         return(
-            <div id='movie-display'>
+            <div className='movies'>
                 
                 <div>
                     <h1>Select a Movie</h1>
-                <select>
-                    <option value="empty"></option>
-                    <option value="volvo">Volvo</option>
+                <select >
+                    <option value='test'> test </option>
                 
                 </select>
                 </div>
