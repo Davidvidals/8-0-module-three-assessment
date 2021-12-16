@@ -1,0 +1,41 @@
+header {
+    background-color: turquoise;
+    display: flex;
+    color: whitesmoke;
+    height: 65px;
+}
+
+header > * {
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 15;
+    padding: 10;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 20px;
+    text-decoration: underline;
+ 
+}
+
+nav ul li a {
+   
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: black;
+    font-weight: bold;
+}
+nav img{
+    height: 50px;
+    width: 50px;
+}
